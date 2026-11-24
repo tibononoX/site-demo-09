@@ -167,6 +167,10 @@ p { margin: 0 0 1em; }
 [data-mode='dark'] .mbar { background: var(--surface); border: 1px solid var(--line); }
 [data-mode='dark'] .mbar a:last-child { color: var(--ink); }
 @media (min-width: 760px) { .mbar { display: none; } }
+/* the bar never covers content: hidden while the hero CTAs are visible, and scroll targets clear it */
+.mbar { transition: transform .3s ease, opacity .3s ease; }
+.mbar.hide { transform: translateY(140%); opacity: 0; visibility: hidden; transition: transform .3s ease, opacity .3s ease, visibility 0s .3s; }
+@media (max-width: 759px) { html { scroll-padding-bottom: 92px; } :where(a, button, input, summary):focus { scroll-margin-bottom: 92px; } }
 
 /* motion (only when html.js is set, i.e. motion allowed) */
 .js [data-rv] { opacity: 0; transform: translateY(18px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); transition-delay: calc(var(--i, 0) * 90ms); }

@@ -20,7 +20,8 @@ const heroImg = img(c.hero.image);
 const introImg = img(c.intro?.image);
 const band = c.band ? img(c.band.image) : undefined;
 const hasWork = !!c.gallery?.items?.length;
-const desc = `${c.name}: ${c.tradeLabel}. ${c.hero.lead}`.slice(0, 158);
+const full = `${c.name}: ${c.tradeLabel}. ${c.hero.lead}`;
+const desc = full.length <= 158 ? full : full.slice(0, 155).replace(/[\s,;:·-]+\S*$/, '') + '…';
 const year = new Date().getFullYear();
 ---
 <!doctype html>
@@ -204,6 +205,20 @@ const year = new Date().getFullYear();
   <a href={`tel:${tel0.tel}`}><span set:html={icon('phone', 20)} />{L.call}</a>
   <a href={`mailto:${c.contact.email}`}><span set:html={icon('mail', 20)} />{L.email}</a>
 </nav>
+<script>
+  // Mobile: the fixed bar steps aside (and is inert) while the hero's own Call/Email buttons are on screen,
+  // so it never covers them.
+  const bar = document.querySelector<HTMLElement>('.mbar');
+  const ctas = document.querySelector('.hero .row');
+  if (bar && ctas && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      const hide = e.isIntersecting;
+      bar.classList.toggle('hide', hide);
+      bar.toggleAttribute('inert', hide);
+      bar.setAttribute('aria-hidden', String(hide));
+    }).observe(ctas);
+  }
+</script>
 
 <script>
   const d = document.documentElement;
