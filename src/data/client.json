@@ -1,0 +1,62 @@
+{
+  "lang": "en",
+  "name": "Ryan Painting & Renovating",
+  "initial": "R",
+  "trade": "painter",
+  "tradeLabel": "Painting & renovations for businesses and homes · Dublin",
+  "theme": { "mode": "dark", "accent": "#d3af30", "display": "serif", "hero": "split" },
+  "hero": {
+    "eyebrow": "Carrickmines, Dublin 18 · Since 2002",
+    "title": "Painting and renovations",
+    "titleEm": "for businesses and homes.",
+    "lead": "A one-stop shop for renovating services to businesses and homes since 2002. We offer an end-to-end solution to transform your business premises or home environment.",
+    "image": "bay-window.jpg",
+    "alt": "Restored bay window with stained glass and a painted window seat"
+  },
+  "rating": { "score": "4.9", "count": 30, "source": "Google" },
+  "intro": {
+    "title": "Why choose us",
+    "paragraphs": [
+      "Our skilled construction team provides a bespoke professional service that has been revamping commercial and residential properties for decades.",
+      "Our master craftsmen have worked on many of Ireland's best known buildings, including hospitals, schools, government buildings and offices. We use environmentally friendly paint."
+    ],
+    "facts": ["Renovating businesses and homes since 2002", "Fully insured", "Member of the National Guild of Master Craftsmen", "Construction Industry Register Ireland"]
+  },
+  "services": {
+    "title": "What we do",
+    "items": [
+      { "title": "Residential painting", "text": "Give your home a fresh, vibrant look. Whether you're restoring historical woodwork or adding a new splash of colour, we're here to help." },
+      { "title": "Residential renovations", "text": "Transform your property into a stylish, modern and comfortable living space. We handle your entire renovation journey, from our first meeting to the final handover." },
+      { "title": "Commercial painting", "text": "A team of master craftsmen with experience on hospitals, schools, government buildings and offices." },
+      { "title": "Commercial renovations", "text": "A fresh new look for your working environment, office space or shop, with simple yet innovative commercial and industrial finishes." },
+      { "title": "Property maintenance", "text": "Maintenance, repairs and painting for property management companies, estate agents and private companies who own or manage commercial and residential property." }
+    ]
+  },
+  "gallery": {
+    "title": "Previous projects",
+    "items": [
+      { "image": "living-room.jpg", "alt": "Renovated living room with built-in shelving and a ceiling rose" },
+      { "image": "shopfront.jpg", "alt": "Black painted shopfront of The Beer Market" },
+      { "image": "pub.jpg", "alt": "Painted white pub facade with green trim" },
+      { "image": "gym.jpg", "alt": "Gym interior with black walls and timber panelling" },
+      { "image": "commercial-1.jpg", "alt": "Painted grey commercial unit with signage" },
+      { "image": "commercial-2.jpg", "alt": "Commercial building with refreshed cladding and car park" }
+    ]
+  },
+  "steps": {
+    "title": "From first meeting to final handover",
+    "items": [
+      { "title": "Get in touch", "text": "Call or email us about your project, for your business or your home." },
+      { "title": "First meeting", "text": "We discuss what you need and steer you on materials, styles and costs." },
+      { "title": "We do the work", "text": "We take care of the whole renovation journey, through to the final handover." }
+    ]
+  },
+  "contact": {
+    "title": "Tell us about your project",
+    "lead": "Take a look at our previous projects and get in touch with us about your own.",
+    "phones": [ { "label": "Call", "display": "087 756 2915", "tel": "+353877562915" } ],
+    "email": "info@ryanpainting.ie",
+    "address": ["6 Glenamuck Cottages", "Carrickmines, Dublin", "D18 H9P4"]
+  },
+  "footer": { "note": "RWK Painting & Decorating Ltd T/A Ryan Painting & Renovating" }
+}
